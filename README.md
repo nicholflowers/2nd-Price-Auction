@@ -24,7 +24,7 @@ The agent tracks per-user clicks, bids, and wins, updating them after every roun
 
 ## 🏆 Results
 
-In a competition against every other submission, the agent placed among the top algorithms, earning the full bonus reserved for the highest scorers.
+The agent outperformed most competing algorithms in the competition, earning the full performance bonus reserved for the strongest strategies.
 
 ## 🧠 Skills Demonstrated
 
@@ -35,4 +35,5 @@ In a competition against every other submission, the agent placed among the top 
 
 ## 🧰 Stack
 
-Python, using the standard library and NumPy.
+Python standard library & NumPy
+
