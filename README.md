@@ -20,11 +20,11 @@ My agent treats each user as a separate learning problem and bids based on what 
 - **Exploiting known users.** Once the agent has won a user at least once, it bids that user's observed click rate, the number of clicks divided by the number of times it has won that user. Because a click is worth exactly one dollar, the observed click rate is a direct estimate of the user's expected value, so the agent bids roughly what the opportunity is worth.
 - **Why this suits a second-price auction.** In a second-price auction, bidding close to true value is a sound strategy, since the winner pays the runner-up's bid rather than its own. Bidding the estimated value keeps the agent competitive without systematically overpaying.
 
-The agent tracks per-user clicks, bids, and wins, updating them after every round as results come back. The surrounding simulation, the users with their hidden click probabilities and the auction that runs each round, determines the winner, and charges the second price, was built to a specified object-oriented structure.
+The agent tracks per-user clicks, bids, and wins, updating them after every round as results come back (`bidder_Flowers_final.py`). The surrounding simulation (`auction_Flowers_final.py`) is organized into clear, single-responsibility classes: the users, each carrying a hidden click probability, and the auction, which runs each round, determines the winner, and charges the second price.
 
 ## 🏆 Results
 
-The agent was recognized by the instructor as one of the top algorithms in the class, earning full marks in the head-to-head competition against other students' submissions.
+In a competition against every other submission, the agent placed among the top algorithms, earning the full bonus reserved for the highest scorers.
 
 ## 🧠 Skills Demonstrated
 
@@ -36,4 +36,3 @@ The agent was recognized by the instructor as one of the top algorithms in the c
 ## 🧰 Stack
 
 Python, using the standard library and NumPy.
-# 2nd-Price-Auction
