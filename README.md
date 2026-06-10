@@ -1,6 +1,6 @@
 # 💰 Second-Price Ad Auction Strategy
 
-**A bidding agent for a simulated online ad auction that learns which users are worth paying for, recognized as one of the top algorithms in the class.**
+**A bidding agent for a simulated second-price ad auction that infers each user's value from observed behavior.**
 
 ## 📌 Overview
 
