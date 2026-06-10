@@ -16,15 +16,15 @@ The goal was to design a bidding agent that finishes with the highest possible b
 
 My agent treats each user as a separate learning problem and bids based on what it has seen so far.
 
-- **Exploring unknown users.** When the agent has no history of winning a given user, it places a small random bid. This is inexpensive exploration: a way to occasionally win unfamiliar users and begin gathering evidence about them.
-- **Exploiting known users.** Once the agent has won a user at least once, it bids that user's observed click rate, the number of clicks divided by the number of times it has won that user. Because a click is worth exactly one dollar, the observed click rate is a direct estimate of the user's expected value, so the agent bids roughly what the opportunity is worth.
+- **Exploring with a random bid.** When a user has no positive click rate yet, whether the agent has never won them or has won them but never seen a click, it places a small random bid. This is inexpensive exploration: a way to occasionally win such users and keep gathering evidence about them.
+- **Exploiting a known click rate.** Once a user has a click rate above zero, the agent bids that rate, the number of clicks divided by the number of times it has won that user. Because a click is worth exactly one dollar, the observed click rate is a direct estimate of the user's expected value, so the agent bids roughly what the opportunity is worth.
 - **Why this suits a second-price auction.** In a second-price auction, bidding close to true value is a sound strategy, since the winner pays the runner-up's bid rather than its own. Bidding the estimated value keeps the agent competitive without systematically overpaying.
 
 The agent tracks per-user clicks, bids, and wins, updating them after every round as results come back (`bidder_Flowers_final.py`). The surrounding simulation (`auction_Flowers_final.py`) is organized into clear, single-responsibility classes: the users, each carrying a hidden click probability, and the auction, which runs each round, determines the winner, and charges the second price.
 
 ## 🏆 Results
 
-This bidding strategy outperformed most others in the competition, earning the full performance bonus reserved for the strongest strategies.
+My bidding strategy outperformed most others in the competition, earning the full performance bonus reserved for the strongest strategies.
 
 ## 🧠 Skills Demonstrated
 
@@ -35,4 +35,4 @@ This bidding strategy outperformed most others in the competition, earning the f
 
 ## 🧰 Stack
 
-Python: Standard library and NumPy.
+Python standard library and NumPy.
