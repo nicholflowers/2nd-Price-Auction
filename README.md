@@ -24,7 +24,7 @@ The agent tracks per-user clicks, bids, and wins, updating them after every roun
 
 ## 🏆 Results
 
-The agent outperformed most competing algorithms in the competition, earning the full performance bonus reserved for the strongest strategies.
+This bidding strategy outperformed most others in the competition, earning the full performance bonus reserved for the strongest strategies.
 
 ## 🧠 Skills Demonstrated
 
@@ -35,5 +35,4 @@ The agent outperformed most competing algorithms in the competition, earning the
 
 ## 🧰 Stack
 
-Python standard library & NumPy
-
+Python: Standard library and NumPy.
